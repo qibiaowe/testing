@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width:600px;
+    height:400px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 5px 20px red;
+    position:relative;
+}
+.img{
+    position: absolute;
+    width: 4200px;
+    height: 400px;
+    z-index: 1;
+    left: -600px;
+}
+.container .img img{
+    float: left;
+    width:600px;
+    height: 400px;
+}
+.container .dot{
+    position: absolute;
+    right: 150px;
+    bottom:20px;
+    width: 100px;
+    height: 10px;
+    z-index: 2;
+    color: red;
+}
+.container .dot span {
+    margin-left: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.container .dot span.on{
+    background-color: red;
+}
+.container .arrow {
+    position: absolute;
+    top: 35%;
+    color: green;
+    padding:0px 14px;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 2;
+    display: none;
+}
+.container .arrow_left {
+    left: 10px;
+}
+.container .arrow_right {
+    right: 10px;
+}
+.container:hover .arrow {
+    display: block;
+}
+.container .arrow:hover {
+    background-color: rgba(0,0,0,0.2);
+}
