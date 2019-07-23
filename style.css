@@ -5,6 +5,7 @@ body{
 a{
     text-decoration: none;
 }
+Html{font-size:62.5%(10/16*100%);}
 .container{
     margin: 0 auto;
     width:600px;
